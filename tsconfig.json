@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": false,
+		"paths": { 
+ 		  "~assets/*": ["./assets/images/*"],
+		}
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Clouds/components/canvas/enviroment/background/index.tsx"],
+  "exclude": ["node_modules"],
+}
+

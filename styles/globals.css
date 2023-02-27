@@ -1,0 +1,113 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+:root{
+  --primary-color: rgb(43, 42, 48);
+  --secondary-color: black;
+
+  --lighter-dark-text: rgba(43, 42, 48, 0.7);
+
+  --background-color: rgb(255, 255, 255);
+  --main-heading: 4rem;
+  --heading: 2.5rem;
+  --para: 1rem;
+  --big-para: 1.2rem;
+  --font: "Plain", monospace;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, span {
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: var(--primary-color);
+    background: var(--text-color-on-image);
+  }
+}
+
+/* Scroll bar  */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--lighter-dark-text);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cedcfc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b2d3fb;
+}
+
+/* Responsive  */
+
+@media (max-width: 1450px) {
+  :root {
+    --main-heading: 3rem;
+    --heading: 2.2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --main-heading: 2.8rem;
+    --heading: 2rem;
+    --para: 0.8rem;
+    --big-para: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --main-heading: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --main-heading: 2.1rem;
+    --heading: 1.5rem;
+  }
+}
+
+.tooltip {
+  padding: 0.3rem 2rem;
+  backdrop-filter: blur(13px);
+  background-color: rgba(234, 230, 255, 0.7);
+  border-radius: 5px/5px;
+}
+
+.tooltip h1 {
+  font-size: 1.3rem;
+  color: blue;
+}
